@@ -120,3 +120,34 @@ print(insertion_sort(arr))
 # output:
 # [0, 0, 1, 1, 2, 5]
 #.......................................................................................................................
+
+
+
+#.......................................................................................................................
+# my own code is here:
+a = [4, 2, 11, 3]
+for j in range(1, len(a)):
+    key = a[j]
+    i = j - 1
+    while i >= 0 and a[i] > key:
+        a[i + 1] = a[i]
+        i = i - 1
+    a[i + 1] = key
+print(a)  # This will print the sorted array
+# its time complexity is O(n^2) and space complexity is O(1)
+#.......................................................................................................................
+# output:
+# [2, 3, 4, 11]
+
+#.......................................................................................................................
+# code working explanation and dry run and live visualization of each step of the code 
+
+#.......................................................................................................................
+# 1 create a list of a with 4 elements 4, 2, 11, 3 and store it in a variable a and its index is 0, 1, 2, 3
+# 2 start the for loop from 1 to 4 and its index is 1, 2, 3 and 0 is not included in the for loop because we have to start the comparison from the second element of the array.
+# 3 set key = a[1] i.e 2 and i = 0  and a[0] = 4 and 4 > 2 so we have to swap the elements i.e a[1] = 4 and a[0] = 2
+# 4 set key = a[2] i.e 11 and i = 1 and a[1] = 4 and 4 < 11 so we have to swap the elements i.e a[2] = 4 and a[1] = 11
+# 5 set key = a[3] i.e 3 and i = 2 and a[2] = 4 and 4 > 3 so we have to swap the elements i.e a[3] = 4 and a[2] = 3
+# 6 print the sorted array i.e [2, 3, 4, 11]
+#.......................................................................................................................
+# 

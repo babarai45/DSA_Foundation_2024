@@ -11,6 +11,7 @@
 # The master theorem has three cases, each of which gives the solution to a different type of recurrence 
 # The three cases of the master theorem are as follows:
 # Case 1: If f(n) = O(n^(log_b(a - ε))) for some constant ε > 0, then T(n) = Θ(n^(log_b(a)))
+
 # Case 2: If f(n) = Θ(n^(log_b(a))), then T(n) = Θ(n^(log_b(a)) * log(n))
 # Case 3: If f(n) = Ω(n^(log_b(a + ε))) for some constant ε > 0, and if a * f(n/b) <= c * f(n) for some constant c < 1 and sufficiently large n, then T(n) = Θ(f(n))
 
@@ -54,3 +55,6 @@
 # f(n)=n 
 # nlog_b(a)>f(n) 
 # T(n)=Θ(n^0.5) #  or omega( n)
+
+
+
